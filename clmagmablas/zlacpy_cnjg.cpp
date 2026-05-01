@@ -24,7 +24,7 @@ magmablas_zlacpy_cnjg(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
 
     const int ndim = 1;
     size_t threads[ndim];
