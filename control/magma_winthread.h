@@ -17,7 +17,7 @@
 #ifndef MAGMA_WINTHREAD_H
 #define MAGMA_WINTHREAD_H
 
-#if (defined( _WIN32 ) || defined( _WIN64 )) && ! defined( __MINGW32__ )
+#if (defined( _WIN32 ) || defined( _WIN64 ))
 
 #include <windows.h>
 
