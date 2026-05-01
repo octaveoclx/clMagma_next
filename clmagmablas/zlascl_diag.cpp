@@ -72,7 +72,7 @@ magmablas_zlascl_diag(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
 
     *info = 0;
     if ( type != MagmaLower && type != MagmaUpper && type != MagmaFull )
