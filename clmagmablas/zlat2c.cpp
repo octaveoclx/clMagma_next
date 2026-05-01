@@ -78,7 +78,7 @@ magmablas_zlat2c(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
 
     *info = 0;
     if ( uplo != MagmaLower && uplo != MagmaUpper )
