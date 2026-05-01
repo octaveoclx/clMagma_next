@@ -23,7 +23,7 @@ magmablas_empty(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
     
     int n=1;
     magma_int_t i0=0, i1=1, i2=1, i3=1, i4=1, i5=1, i6=1, i7=1, i8=1, i9=1;
