@@ -11,6 +11,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifdef __MINGW32__
+    #include <malloc.h>   // MinGW-w64 需要此头文件声明 _aligned_malloc
+#endif
+
 #include "clmagma_runtime.h"
 #include "magma.h"
 #include "error.h"
