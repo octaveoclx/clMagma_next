@@ -81,7 +81,7 @@ magmablas_zlaset_band(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
 
     magma_int_t info = 0;
     if ( uplo != MagmaLower && uplo != MagmaUpper )
