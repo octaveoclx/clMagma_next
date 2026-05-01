@@ -76,7 +76,7 @@ magmablas_zlag2c(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
 
     *info = 0;
     if ( m < 0 )
