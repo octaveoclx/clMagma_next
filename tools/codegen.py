@@ -167,8 +167,8 @@ class SourceFile( object ):
         its substitution table, source and destination precisions.
         '''
         self._filename = filename
-        fd = open( filename, 'r' )
-        self._text = fd.read()
+        with open(filename, 'r', encoding='utf-8', errors='replace') as fd:
+            self._text = fd.read()
         fd.close()
         m = self.precisions_re.search( self._text )
         if m:
