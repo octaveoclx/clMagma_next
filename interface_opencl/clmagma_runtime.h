@@ -19,8 +19,8 @@ public:
     // ------------------------------
     clmagma_runtime():
         m_context      ( NULL ),
-        m_num_devices  ( 0 ),
-        m_bExternalContext (false)
+        m_bExternalContext (false),
+        m_num_devices  ( 0 )
     {
         for( int dev=0; dev < MAX_DEVICES; ++dev ) {
             m_devices[dev] = NULL;
