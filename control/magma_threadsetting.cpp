@@ -63,7 +63,7 @@ magma_int_t magma_get_parallel_numthreads()
 #endif
 
     if ( ncores == 0 ) {
-        #ifdef _MSC_VER  // Windows
+        #if defined(_WIN32) || defined(_WIN64) || defined(__MINGW32__)  // Windows
         SYSTEM_INFO sysinfo;
         GetSystemInfo( &sysinfo );
         ncores = sysinfo.dwNumberOfProcessors;
