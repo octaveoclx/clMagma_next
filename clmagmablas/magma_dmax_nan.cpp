@@ -24,7 +24,7 @@ magmablas_dmax_nan(
 {
     cl_kernel kernel;
     cl_int err;
-    int arg;
+    int arg = 0;
 
     size_t grid[1] = { 1 };
     size_t threads[1] = { NB };
