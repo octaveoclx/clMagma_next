@@ -18,13 +18,7 @@ clMAGMA README FILE
   make.inc.mkl-*, make.inc.openblas showing how to link to ACML, ATLAS, MacOS
   veclib, MKL, and OpenBLAS, respectively.
 
-  All the make.inc files assume $CUDADIR is set in your environment.
-  For bash (sh), put in ~/.bashrc (with your system's path):
-      export CUDADIR=/usr/loca/cuda
-  For csh/tcsh, put in ~/.cshrc:
-      setenv CUDADIR /usr/local/cuda
-  MAGMA is tested with CUDA >= 5.5. Some functionality requires a newer version.
-  
+
   The MKL make.inc files assume $MKLROOT is set in your environment.
   For bash (sh), put in ~/.bashrc (with your system's path):
       source /opt/intel/composerxe/mkl/bin/mklvars.sh intel64
